@@ -1,10 +1,16 @@
 [
   {
     "icon": "📚",
+    "title": "Ai Agent Cook Book",
+    "description": "Learn building Ai Agents",
+    "link": "https://zeeshan.p2pclouds.net/books/development/4/ai-agents-in-action-book-from-zeeshan-ali-website.pdf",
+    "cta": "Open"
+  },
+  {
+    "icon": "📚",
     "title": "AI Engineering Fundamentals",
     "description": "A concise guide to designing and shipping AI systems.",
     "link": "https://example.com/ai-engineering-fundamentals.pdf",
     "cta": "Download PDF"
   }
 ]
-
