@@ -1,0 +1,34 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="150" cy="150" r="150" fill="url(#bg)"/>
+  
+  <!-- Person Icon -->
+  <g fill="white" opacity="0.9">
+    <!-- Head -->
+    <circle cx="150" cy="120" r="35"/>
+    
+    <!-- Body -->
+    <path d="M150 160 C 120 160, 100 180, 100 200 L 100 220 C 100 240, 120 260, 150 260 C 180 260, 200 240, 200 220 L 200 200 C 200 180, 180 160, 150 160 Z"/>
+  </g>
+  
+  <!-- AI/Code Symbol -->
+  <g fill="white" opacity="0.7" transform="translate(200, 80)">
+    <rect x="0" y="0" width="4" height="20" rx="2"/>
+    <rect x="8" y="0" width="4" height="20" rx="2"/>
+    <rect x="16" y="0" width="4" height="20" rx="2"/>
+    <rect x="24" y="0" width="4" height="20" rx="2"/>
+    
+    <!-- Binary pattern -->
+    <circle cx="2" cy="25" r="1"/>
+    <circle cx="10" cy="25" r="1"/>
+    <circle cx="18" cy="25" r="1"/>
+    <circle cx="26" cy="25" r="1"/>
+  </g>
+</svg>

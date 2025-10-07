@@ -1,0 +1,16 @@
+{
+  "name": "the-neural-mechanic-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cms": "node tools/cms.js",
+    "deploy": "node tools/cms.js deploy"
+  },
+  "dependencies": {
+    "inquirer": "^9.3.7",
+    "kleur": "^4.1.5",
+    "simple-git": "^3.27.0"
+  }
+}
+
