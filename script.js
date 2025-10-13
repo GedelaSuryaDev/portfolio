@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.section');
     
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-theme');
+    }
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-theme');
+        
+        // Save theme preference
+        const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+        localStorage.setItem('theme', theme);
+    });
+    
     // Handle navigation clicks
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
