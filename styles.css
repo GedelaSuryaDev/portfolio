@@ -863,11 +863,11 @@ body.dark-theme .theme-toggle .moon-icon {
     }
     
     .contact-info-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
     
     .contact-info-card {
-        padding: 2rem;
+        padding: 1.5rem;
     }
     
     .work-cta {
