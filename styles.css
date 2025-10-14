@@ -732,7 +732,9 @@ body.dark-theme .theme-toggle .moon-icon {
     text-decoration: none;
     transition: color 0.3s ease;
     display: block;
-    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contact-value:hover {
