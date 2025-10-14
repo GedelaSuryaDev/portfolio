@@ -652,6 +652,93 @@ body.dark-theme .theme-toggle .moon-icon {
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
+/* Contact Information Section */
+.contact-info-section {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.contact-info-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px var(--card-shadow);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--card-shadow-hover);
+}
+
+.contact-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--bg-tertiary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .contact-icon {
+    background: var(--accent-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.contact-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    word-break: break-word;
+}
+
+.contact-value:hover {
+    color: var(--accent-color);
+}
+
 .work-cta {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     padding: 3rem;
@@ -773,6 +860,14 @@ body.dark-theme .theme-toggle .moon-icon {
     
     .service-card {
         padding: 2rem;
+    }
+    
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info-card {
+        padding: 1.5rem;
     }
     
     .work-cta {
