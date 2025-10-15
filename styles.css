@@ -459,67 +459,134 @@ body.dark-theme .theme-toggle .moon-icon {
     transition: color 0.3s ease;
 }
 
-/* Ebooks/Resources Section */
-.ebooks-container {
-    max-width: 1000px;
+/* Projects Section */
+.projects-container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.resources-grid {
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
     margin-top: 2rem;
 }
 
-.resource-card {
+.project-card {
     background: var(--bg-secondary);
-    padding: 2rem;
     border-radius: 12px;
+    overflow: hidden;
     box-shadow: 0 4px 6px var(--card-shadow);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.resource-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px var(--card-shadow-hover);
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--card-shadow-hover);
 }
 
-.resource-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #8b5cf6 100%);
+    overflow: hidden;
 }
 
-.resource-title {
-    font-size: 1.2rem;
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tag {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: var(--text-primary);
     transition: color 0.3s ease;
 }
 
-.resource-description {
+.project-description {
     color: var(--text-secondary);
+    line-height: 1.6;
     margin-bottom: 1.5rem;
-    line-height: 1.5;
+    flex: 1;
     transition: color 0.3s ease;
 }
 
-.resource-link {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.resource-link:hover {
-    background-color: var(--accent-hover);
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.project-link svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* Work With Me Section */
@@ -852,7 +919,7 @@ body.dark-theme .theme-toggle .moon-icon {
         margin-bottom: 0.5rem;
     }
     
-    .resources-grid {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
     

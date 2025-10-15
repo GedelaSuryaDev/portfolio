@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad3)"/>
+  
+  <!-- Camera/Eye icon for computer vision -->
+  <g transform="translate(300, 200)">
+    <!-- Camera body -->
+    <rect x="20" y="40" width="160" height="120" rx="15" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="3"/>
+    
+    <!-- Lens -->
+    <circle cx="100" cy="100" r="45" fill="rgba(255,255,255,0.3)" stroke="white" stroke-width="3"/>
+    <circle cx="100" cy="100" r="30" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+    
+    <!-- Flash -->
+    <circle cx="150" cy="60" r="10" fill="white"/>
+    
+    <!-- Detection boxes -->
+    <rect x="220" y="50" width="60" height="40" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+    <rect x="220" y="110" width="50" height="50" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="420" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle">Object Detection</text>
+</svg>
