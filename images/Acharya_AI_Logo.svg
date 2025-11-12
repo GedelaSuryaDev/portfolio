@@ -1,0 +1,55 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="40" cy="40" r="38" fill="url(#bgGradient)" stroke="white" stroke-width="2"/>
+  
+  <!-- Pen (simplified, prominent) -->
+  <g transform="translate(40, 40) rotate(-35)">
+    <!-- Pen body -->
+    <rect x="-3" y="-22" width="6" height="35" rx="2" fill="#1e293b"/>
+    
+    <!-- Pen tip/nib -->
+    <path d="M -3 13 L 0 18 L 3 13 Z" fill="#64748b"/>
+    
+    <!-- Pen cap -->
+    <rect x="-3.5" y="-24" width="7" height="5" rx="2" fill="#475569"/>
+    
+    <!-- Pen clip -->
+    <rect x="3" y="-22" width="2" height="10" rx="1" fill="#94a3b8"/>
+    
+    <!-- Pen band (decorative) -->
+    <rect x="-3" y="-12" width="6" height="2" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Writing effect - curved lines -->
+  <g opacity="0.85">
+    <path d="M 20 50 Q 30 48, 40 50 Q 50 52, 60 50" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 22 56 Q 32 54, 42 56 Q 52 58, 60 56" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  
+  <!-- Enhancement sparkles -->
+  <g>
+    <circle cx="18" cy="25" r="3" fill="#fbbf24" opacity="0.9"/>
+    <circle cx="62" cy="30" r="2.5" fill="#fcd34d" opacity="0.9"/>
+    <circle cx="25" cy="62" r="2.5" fill="white" opacity="0.8"/>
+    <circle cx="58" cy="60" r="2" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Decorative stars -->
+  <g>
+    <path d="M 15 35 L 16.5 38 L 19.5 39.5 L 16.5 41 L 15 44 L 13.5 41 L 10.5 39.5 L 13.5 38 Z" fill="white" opacity="0.9"/>
+    <path d="M 65 20 L 66.5 23 L 69.5 24.5 L 66.5 26 L 65 29 L 63.5 26 L 60.5 24.5 L 63.5 23 Z" fill="#fbbf24" opacity="0.9"/>
+    <path d="M 60 15 L 61 17 L 63 18 L 61 19 L 60 21 L 59 19 L 57 18 L 59 17 Z" fill="white" opacity="0.85"/>
+  </g>
+  
+  <!-- Ink dots (writing effect) -->
+  <circle cx="48" cy="45" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="52" cy="48" r="1.2" fill="white" opacity="0.5"/>
+  <circle cx="55" cy="52" r="1" fill="white" opacity="0.4"/>
+</svg>
